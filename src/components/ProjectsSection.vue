@@ -83,11 +83,11 @@ onMounted(() => {
             </ul>
 
             <div class="flex items-center gap-6 pt-4">
-              <a :href="project.github" target="_blank" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300">
+              <a :href="'https://github.com/houssamtermoussi'" target="_blank" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300">
                 <Github class="w-6 h-6" />
                 <span class="font-medium">Code</span>
               </a>
-              <a :href="project.live" target="_blank" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300">
+              <a :href="'https://github.com/houssamtermoussi'" target="_blank" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300">
                 <ExternalLink class="w-6 h-6" />
                 <span class="font-medium">Live Demo</span>
               </a>
