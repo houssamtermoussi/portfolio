@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { Code2, Braces, Layout, Paintbrush, Wind, Zap, Atom, Server, Database, FileCode } from 'lucide-vue-next'
+import { Code2, Braces, Layout, Paintbrush, Wind, Zap, Atom, Server, Database } from 'lucide-vue-next'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -19,7 +19,6 @@ const skills = [
   { name: 'Laravel', icon: Server, color: 'text-red-500', glow: 'shadow-red-500/50' },
   { name: 'Python', icon: Code2, color: 'text-yellow-300', glow: 'shadow-yellow-300/50' },
   { name: 'MySQL', icon: Database, color: 'text-blue-300', glow: 'shadow-blue-300/50' },
-  { name: 'MongoDB', icon: FileCode, color: 'text-green-600', glow: 'shadow-green-600/50' },
 ]
 
 onMounted(() => {
