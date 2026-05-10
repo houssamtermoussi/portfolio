@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'Smart Hearing Aid App',
     description: 'A smart hearing aid application designed to enhance accessibility for people with hearing loss, featuring an intuitive interface and optimized user experience.',
-    stack: ['Vue.js', 'Laravel', 'TailwindCSS'],
+    stack: ['Vue.js', 'Laravel', 'MySQL', 'TailwindCSS'],
     image: '/smart_hearing_aid_app.png',
     github: '#',
     live: '#'
@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'Cinema Reservation System',
     description: 'A cinema reservation website providing a seamless booking system with an elegant UI, allowing users to browse movies, check schedules, and reserve tickets easily.',
-    stack: ['Laravel', 'Vue.js', 'MySQL'],
+    stack: ['Laravel', 'Vue.js', 'MySQL', 'TailwindCSS'],
     image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=800&auto=format&fit=crop',
     github: '#',
     live: '#'
