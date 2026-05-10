@@ -1,47 +1,63 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { onMounted, onUnmounted } from 'vue'
+import Lenis from 'lenis'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
+import HeroSection from './components/HeroSection.vue'
+import AboutSection from './components/AboutSection.vue'
+import SkillsSection from './components/SkillsSection.vue'
+import ProjectsSection from './components/ProjectsSection.vue'
+import ParallaxShowcase from './components/ParallaxShowcase.vue'
+import ContactSection from './components/ContactSection.vue'
+import FooterSection from './components/FooterSection.vue'
+
+gsap.registerPlugin(ScrollTrigger)
+
+let lenis: Lenis
+
+onMounted(() => {
+  // Initialize Lenis
+  lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    orientation: 'vertical',
+    gestureOrientation: 'vertical',
+    smoothWheel: true,
+    wheelMultiplier: 1,
+    touchMultiplier: 2,
+    infinite: false,
+  })
+
+  // Synchronize Lenis with GSAP ScrollTrigger
+  lenis.on('scroll', ScrollTrigger.update)
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000)
+  })
+
+  gsap.ticker.lagSmoothing(0)
+})
+
+onUnmounted(() => {
+  if (lenis) {
+    lenis.destroy()
+  }
+})
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
+  <main class="bg-brand-black text-white min-h-screen selection:bg-brand-purple/30 selection:text-white">
+    <HeroSection />
+    <AboutSection />
+    <SkillsSection />
+    <ParallaxShowcase />
+    <ProjectsSection />
+    <ContactSection />
+    <FooterSection />
   </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+<style>
+/* Any App-specific overrides can go here */
 </style>

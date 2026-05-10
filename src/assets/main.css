@@ -1,35 +1,63 @@
-@import './base.css';
+@import "tailwindcss";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+@theme {
+  --color-brand-black: #050505;
+  --color-brand-purple: #8b5cf6;
+  --color-brand-blue: #3b82f6;
+  --color-brand-glow: rgba(139, 92, 246, 0.5);
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  
+  --animate-float: float 6s ease-in-out infinite;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
-@media (min-width: 1024px) {
+@layer base {
   body {
-    display: flex;
-    place-items: center;
+    @apply bg-brand-black text-white antialiased overflow-x-hidden;
+    font-family: 'Inter', system-ui, sans-serif;
   }
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
   }
+  .glow-text {
+    text-shadow: 0 0 20px var(--color-brand-glow);
+  }
+  .glow-box {
+    box-shadow: 0 0 20px var(--color-brand-glow);
+  }
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
