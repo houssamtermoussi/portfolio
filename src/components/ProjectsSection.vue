@@ -14,7 +14,7 @@ const projects = [
     title: 'Smart Hearing Aid App',
     description: 'A smart hearing aid application designed to enhance accessibility for people with hearing loss, featuring an intuitive interface and optimized user experience.',
     stack: ['Vue.js', 'Python', 'TailwindCSS'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop',
+    image: '/smart_hearing_aid_app.png',
     github: '#',
     live: '#'
   },
