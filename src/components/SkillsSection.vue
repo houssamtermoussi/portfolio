@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { Code2, Braces, Layout, Paintbrush, Wind, Zap } from 'lucide-vue-next'
+import { Code2, Braces, Layout, Paintbrush, Wind, Zap, Atom, Server, Database, FileCode } from 'lucide-vue-next'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -11,11 +11,15 @@ const skillsCards = ref([])
 
 const skills = [
   { name: 'Vue.js', icon: Braces, color: 'text-green-500', glow: 'shadow-green-500/50' },
-  { name: 'JavaScript', icon: Code2, color: 'text-yellow-400', glow: 'shadow-yellow-400/50' },
+  { name: 'React.js', icon: Atom, color: 'text-blue-400', glow: 'shadow-blue-400/50' },
   { name: 'HTML5', icon: Layout, color: 'text-orange-500', glow: 'shadow-orange-500/50' },
   { name: 'CSS3', icon: Paintbrush, color: 'text-blue-500', glow: 'shadow-blue-500/50' },
-  { name: 'Tailwind CSS', icon: Wind, color: 'text-teal-400', glow: 'shadow-teal-400/50' },
+  { name: 'TailwindCSS', icon: Wind, color: 'text-teal-400', glow: 'shadow-teal-400/50' },
   { name: 'GSAP', icon: Zap, color: 'text-green-400', glow: 'shadow-green-400/50' },
+  { name: 'Laravel', icon: Server, color: 'text-red-500', glow: 'shadow-red-500/50' },
+  { name: 'Python', icon: Code2, color: 'text-yellow-300', glow: 'shadow-yellow-300/50' },
+  { name: 'MySQL', icon: Database, color: 'text-blue-300', glow: 'shadow-blue-300/50' },
+  { name: 'MongoDB', icon: FileCode, color: 'text-green-600', glow: 'shadow-green-600/50' },
 ]
 
 onMounted(() => {

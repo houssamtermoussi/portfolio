@@ -11,26 +11,18 @@ const projectCards = ref([])
 
 const projects = [
   {
-    title: 'Modern Landing Page',
-    description: 'Une landing page premium avec parallax, smooth scroll et des animations ultra-fluides.',
-    stack: ['Vue 3', 'Tailwind CSS', 'Lenis'],
-    image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800&auto=format&fit=crop',
-    github: '#',
-    live: '#'
-  },
-  {
-    title: 'Gaming UI Concept',
-    description: 'Interface futuriste avec des interactions dynamiques, hover effects et un design asymétrique.',
-    stack: ['Vue 3', 'GSAP', 'CSS Grid'],
-    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop',
-    github: '#',
-    live: '#'
-  },
-  {
-    title: 'Sports Dashboard',
-    description: 'Dashboard interactif avec des graphiques stylisés et un système de cartes modulables.',
-    stack: ['Vue 3', 'Chart.js', 'Tailwind'],
+    title: 'Smart Hearing Aid App',
+    description: 'A smart hearing aid application designed to enhance accessibility for people with hearing loss, featuring an intuitive interface and optimized user experience.',
+    stack: ['Vue.js', 'Python', 'TailwindCSS'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop',
+    github: '#',
+    live: '#'
+  },
+  {
+    title: 'Cinema Reservation System',
+    description: 'A cinema reservation website providing a seamless booking system with an elegant UI, allowing users to browse movies, check schedules, and reserve tickets easily.',
+    stack: ['Laravel', 'Vue.js', 'MySQL'],
+    image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=800&auto=format&fit=crop',
     github: '#',
     live: '#'
   }

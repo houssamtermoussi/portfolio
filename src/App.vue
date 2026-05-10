@@ -9,7 +9,6 @@ import AboutSection from './components/AboutSection.vue'
 import SkillsSection from './components/SkillsSection.vue'
 import ProjectsSection from './components/ProjectsSection.vue'
 import ParallaxShowcase from './components/ParallaxShowcase.vue'
-import ContactSection from './components/ContactSection.vue'
 import FooterSection from './components/FooterSection.vue'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -53,7 +52,6 @@ onUnmounted(() => {
     <SkillsSection />
     <ParallaxShowcase />
     <ProjectsSection />
-    <ContactSection />
     <FooterSection />
   </main>
 </template>
