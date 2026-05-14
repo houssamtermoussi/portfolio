@@ -52,7 +52,7 @@ onMounted(() => {
         Houssam Termoussi
       </h1>
       <div ref="subtitle" class="space-y-4">
-        <h2 class="text-2xl md:text-3xl text-gray-300 font-light">Frontend Developer</h2>
+        <h2 class="text-2xl md:text-3xl text-gray-300 font-light">Full-Stack Developer</h2>
         <p class="text-xl md:text-2xl text-gray-400 italic font-serif">"Creating immersive web experiences."</p>
       </div>
     </div>
