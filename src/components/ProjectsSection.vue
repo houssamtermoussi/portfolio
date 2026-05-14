@@ -11,6 +11,14 @@ const projectCards = ref([])
 
 const projects = [
   {
+    title: 'Getwyn Agency',
+    description: 'A high-end portfolio for a digital development company, featuring immersive GSAP animations, cinematic parallax effects, and a sleek glassmorphic design for a premium user experience.',
+    stack: ['Vue.js', 'GSAP', 'TailwindCSS'],
+    image: '/projects/dev-agency.png',
+    github: '#',
+    live: '#'
+  },
+  {
     title: 'Smart Hearing Aid App',
     description: 'A smart hearing aid application designed to enhance accessibility for people with hearing loss, featuring an intuitive interface and optimized user experience.',
     stack: ['Vue.js', 'Laravel', 'MySQL', 'TailwindCSS'],
