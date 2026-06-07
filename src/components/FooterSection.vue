@@ -16,10 +16,10 @@ import { Github, Linkedin, Mail } from 'lucide-vue-next'
         <a href="https://github.com/houssamtermoussi" target="_blank" class="text-gray-500 hover:text-white hover:scale-110 hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] rounded-full transition-all duration-300">
           <Github class="w-5 h-5" />
         </a>
-        <a href="#" target="_blank" class="text-gray-500 hover:text-white hover:scale-110 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] rounded-full transition-all duration-300">
+        <a href="https://www.linkedin.com/in/houssam-termoussi-6b10163bb/" target="_blank" class="text-gray-500 hover:text-white hover:scale-110 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] rounded-full transition-all duration-300">
           <Linkedin class="w-5 h-5" />
         </a>
-        <a href="https://mail.google.com/mail/?compose=new&to=houssam111888@gmail.com" target="_blank" class="text-gray-500 hover:text-white hover:scale-110 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] rounded-full transition-all duration-300">
+        <a href="mailto:houssam111888@gmail.com" class="text-gray-500 hover:text-white hover:scale-110 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] rounded-full transition-all duration-300">
           <Mail class="w-5 h-5" />
         </a>
       </div>
