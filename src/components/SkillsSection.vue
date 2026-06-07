@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { Code2, Braces, Layout, Paintbrush, Wind, Zap, Atom, Server, Database } from 'lucide-vue-next'
+import { Braces, Atom, Smartphone, Server, Code2, Globe, Database, HardDrive, FolderTree } from 'lucide-vue-next'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -10,15 +10,18 @@ const skillsSection = ref(null)
 const skillsCards = ref([])
 
 const skills = [
-  { name: 'Vue.js', icon: Braces, color: 'text-green-500', glow: 'shadow-green-500/50' },
+  // Ligne 1 — Frontend
   { name: 'React.js', icon: Atom, color: 'text-blue-400', glow: 'shadow-blue-400/50' },
-  { name: 'HTML5', icon: Layout, color: 'text-orange-500', glow: 'shadow-orange-500/50' },
-  { name: 'CSS3', icon: Paintbrush, color: 'text-blue-500', glow: 'shadow-blue-500/50' },
-  { name: 'TailwindCSS', icon: Wind, color: 'text-teal-400', glow: 'shadow-teal-400/50' },
-  { name: 'GSAP', icon: Zap, color: 'text-green-400', glow: 'shadow-green-400/50' },
+  { name: 'Vue.js', icon: Braces, color: 'text-green-500', glow: 'shadow-green-500/50' },
+  { name: 'Flutter', icon: Smartphone, color: 'text-cyan-400', glow: 'shadow-cyan-400/50' },
+  // Ligne 2 — Backend
   { name: 'Laravel', icon: Server, color: 'text-red-500', glow: 'shadow-red-500/50' },
-  { name: 'Python', icon: Code2, color: 'text-yellow-300', glow: 'shadow-yellow-300/50' },
+  { name: 'Express.js', icon: Code2, color: 'text-gray-300', glow: 'shadow-gray-300/50' },
+  { name: 'Next.js', icon: Globe, color: 'text-white', glow: 'shadow-white/50' },
+  // Ligne 3 — Database
   { name: 'MySQL', icon: Database, color: 'text-blue-300', glow: 'shadow-blue-300/50' },
+  { name: 'PostgreSQL', icon: HardDrive, color: 'text-indigo-400', glow: 'shadow-indigo-400/50' },
+  { name: 'MongoDB', icon: FolderTree, color: 'text-green-400', glow: 'shadow-green-400/50' },
 ]
 
 onMounted(() => {
