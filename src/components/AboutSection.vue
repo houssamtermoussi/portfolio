@@ -56,7 +56,7 @@ onMounted(() => {
         <h2 class="text-3xl md:text-5xl font-bold mb-8 glow-text tracking-wide uppercase">About Me</h2>
         
         <p ref="textRef" class="text-xl md:text-3xl font-light leading-relaxed text-gray-200">
-          Fullstack developer passionate about building <span class="text-brand-blue font-medium">modern </span>, high-performance web <span class="text-brand-purple font-medium">applications</span> with immersive user experiences, smooth interfaces, and strong, scalable<span class="text-white font-medium glow-text"> backend logic</span>.
+          Fullstack developer passionate about building <span class="text-brand-blue font-medium">modern </span>, high-performance web &amp; mobile <span class="text-brand-purple font-medium">applications</span> with immersive user experiences, smooth interfaces, and strong, scalable<span class="text-white font-medium glow-text"> backend logic</span>.
         </p>
       </div>
     </div>
